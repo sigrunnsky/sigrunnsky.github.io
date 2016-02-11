@@ -2,27 +2,77 @@
    <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	  </head>
+   <!-- <LINK REL= StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen> -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
 
+	  </head>
+<div class="container">
   <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 
+</div>
 
-
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <h1>Sigrunn Sky </h1>
-<img src="photos/GardenOfGodsWhite.jpg" class="responsive-img" class="center-align" class="card-panel hoverable" width = "80%">
+
+<div id="links">
+    <a href="photos/GardenofGodsWhite.jpg" title="Banana" data-gallery>
+        <img src="photos/GardenofGodsWhite.jpg" alt="Banana">
+    </a>
+    <a href="photos/bingo-3328.jpg" title="Apple" data-gallery>
+        <img src="photos/bingo-3328.jpg" alt="Apple">
+    </a>
+    <a href="photos/bingo-3414.jpg" title="Orange" data-gallery>
+        <img src="photos/bingo-3414.jpg" alt="Orange">
+    </a>
+</div>
 <p>Hello and welcome to my webpage ;)</p>
 
 
 
 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 </html>
